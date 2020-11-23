@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Validation</title>
+  </head>
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+    alert("Masukkan Nama!");
+    return false;
+      }
+    }
+  </script>
+  <body>
+
+  <style>
+    form {
+      text-align: center;
+      padding: 10%;
+    }
+  </style>
+
+  <form name="myForm" action="media/ok.webp" onsubmit="return validateForm()" method="post">
+  Nama : <input type="text" name="fname">
+  <input type="submit" value="Submit">
+  </form>
+
+  </body>
+</html>

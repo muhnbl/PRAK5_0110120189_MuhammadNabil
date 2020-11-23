@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <head>
+    <title>LOGIN</title>
+  </head>
+
+  <body style="background:black;">
+
+  <style>
+      .container {
+        background-color: none;
+        color: white;
+        text-align: center;
+        margin: 0%;
+        position: absolute;
+        top: 35%;
+        left: 44%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+      }
+    .button {
+        background: linear-gradient(to right, blue , black);
+        border-radius: 25px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      .gif {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+      }
+  </style>
+
+  <img class="gif" src="tools/media/cat.gif">
+
+  <form action="tools/home.html" method="post">
+   <div class="container">
+     <label for="uname"><b>Username</b></label>
+     <input type="text" placeholder="Enter Username" name="admin" required>
+     <br/>
+     <label for="psw"><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="admin" required>
+     <br/>
+     <br/>
+     <button class="button" type="submit">Login</button>
+   </div>
+  </body>
+</html>

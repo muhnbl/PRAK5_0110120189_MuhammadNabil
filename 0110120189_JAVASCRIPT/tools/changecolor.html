@@ -1,0 +1,35 @@
+<html>
+  <head>
+
+  <meta charset="utf-8" />
+
+  <title>Change Color</title>
+    <script language="JavaScript">
+      function ubahWarna() {
+        let acak = Math.round(Math.random() *10);
+        let warna = ["beige", "cyan", "yellow", "pink", "green", "blue", "red",
+        "azure", "gold", "gray", "purple"];
+
+      console.log("bilangan acak " + acak);
+      console.log("Dapat warna" + warna[acak]);
+
+      document.getElementById("id1").style="background-color:"+warna[acak];
+
+      }
+      </script>
+
+    </head>
+    <style>
+      form {
+        border-radius: 25px;
+        color: white;
+        text-align: center;
+      }
+    </style>
+    <body id="id1">
+      <form>
+        <input type="button" value="Ubah Warna" onclick="ubahWarna()"/>
+      </form>
+    </body>
+
+</html>
